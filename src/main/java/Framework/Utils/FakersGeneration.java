@@ -15,8 +15,13 @@ public class FakersGeneration {
         faker = new Faker(new Locale("pt-BR"));
     }
 
-    public String getName(){
+    public String getFirtName(){
         name = faker.name().firstName();
+        return name;
+    }
+
+    public String getLastName(){
+        name = faker.name().lastName();
         return name;
     }
 
@@ -25,7 +30,7 @@ public class FakersGeneration {
         return description;
     }
 
-    public String getConta(){
+    public String getAccount(){
         conta = faker.university().name();
         return conta;
     }
